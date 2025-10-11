@@ -27,18 +27,30 @@ body {
 .frame-link {
     text-decoration: none;
     color: inherit;
-    display: inline-block;
+    display: block;
+    margin-bottom: 30px; /* Отступ между рамочками */
 }
 
-/* Сама красивая рамочка */
+/* Одинаковые стили для обеих рамочек */
 .frame {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 15px;
-    padding: 40px 60px;
+    padding: 50px 80px;
     transition: all 0.3s ease;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Убрать отступ у последней рамочки */
+.frame-link:last-child {
+    margin-bottom: 0;
 }
 
 /* Эффект при наведении на рамочку */
@@ -49,16 +61,17 @@ body {
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
 }
 
-/* Стили для текста внутри рамочки */
+/* Стили для текста внутри рамочек */
 .frame h1 {
     margin-bottom: 15px;
-    font-size: 2.5em;
+    font-size: 2.2em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
 }
 
 .frame p {
     margin: 0;
     font-size: 1.2em;
     opacity: 0.9;
-
+    text-align: center;
 }
