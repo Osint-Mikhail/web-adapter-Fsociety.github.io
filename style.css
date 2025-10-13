@@ -6,7 +6,7 @@ body {
     /* Стиль */
     background: 
         linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url('https://upload.wikimedia.org/wikipedia/commons/9/95/MrRobot_intertitle.png');
+        url('https://wallpaper.forfun.com/fetch/a8/a83f5c748545cfa61084ad2083079c35.jpeg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -154,4 +154,5 @@ body {
         min-height: 70px;
     }
 }
+
 
